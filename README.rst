@@ -26,6 +26,21 @@ best-browsable-api for Django Rest Framework
      :target: https://requires.io/github/Nekmo/best-browsable-api/requirements/?branch=master
      :alt: Requirements Status
 
+To install Best Browsable API, run this command in your django project:
+
+.. code-block:: console
+
+    $ pip install -e git+https://github.com/Nekmo/best-browsable-api.git@master#egg=best_browsable_api
+
+And add ``best_browsable_api`` to your ``INSTALLED_APPS`` setting (before ``rest_framework``):
+
+.. code-block:: python
+
+    INSTALLED_APPS = [
+        "best_browsable_api",  # Before rest_framework!
+        "rest_framework",
+    ]
+
 
 Collapse tree
 =============
